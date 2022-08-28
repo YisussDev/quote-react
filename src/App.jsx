@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Quote from './components/Quote';
+import QuoteBox from './components/QuoteBox';
 import quotes from './data/quotes.json';
 
 const generateColor= () => {
@@ -20,7 +20,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Quote 
+      <QuoteBox 
       author={quotes[index].author}
       quote={quotes[index].quote}
       color={color}
