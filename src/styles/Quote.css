@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+.quote-container {
+    background-color: white;
+    padding: 20px;
+    width: 100vw;
+    min-height: 100px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 1px 1px 4px 0px #222222;
+    animation: render 0.2s;
+}
+.quote-container > button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    margin: auto;
+    color: white;
+    box-shadow: 1px 1px 4px 0px #222222;
+    border: none;
+    user-select: none;
+}
+.quote-container > button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 0px #FFFFFF;
+    filter: saturate(10);
+    transform: translateY(-5px);
+}
+.quote-container > button:active{
+    transform: translateY(-3px);
+}
+.quote-container > h2 {
+    text-align: center;
+    margin-bottom: 10px;    
+}
+.quote-container > p {
+    font-size: 1.4rem;
+    text-align: right;
+    margin-bottom: 10px;
+
+}
+.background_triangle {
+    height: 800px;
+    width: 800px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 1px 1px 4px 0px #222222;
+    transform: rotate(45deg);
+}
+.quote_icon {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    position: relative;
+    margin: auto;
+}
+
+@keyframes render {
+    0%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+@media (min-width: 600px) {
+    .quote-container{
+    width: 600px;
+    }
+    .quote-container > button {
+    margin-left: 500px;
+    }
+    .quote_icon{
+    position: absolute;
+    }
+    .quote-container > h2 {
+    padding-left: 80px;
+    }
+
+    
+}
